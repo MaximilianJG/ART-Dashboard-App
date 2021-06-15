@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import requests
-import json
 
 def get_overlayed_zscore_data(participant_id):
     url = "http://127.0.0.1:8000/overlayed_zscores"
