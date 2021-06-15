@@ -6,7 +6,7 @@ import cognition_scores
 import general
 
 # Config
-image = Image.open("app/images/ART-4.png")
+image = Image.open("images/ART-4.png")
 st.set_page_config(layout="wide")
 
 PAGES = {
@@ -19,7 +19,7 @@ def local_css(file_name):
     with open(file_name) as f: 
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-local_css("app/style.css")   
+local_css("style.css")   
 
 # Sidebar
 st.sidebar.image(image, use_column_width=False, width=200)
